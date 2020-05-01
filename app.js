@@ -13,4 +13,4 @@ app.get('/', function(req, res){
 });
 app.post('/', userController.create)
 
-app.listen(8080, function(){ console.log('Node server listening on port 3000');});
+app.listen(8080, function(){ console.log('Node server listening on port 8080');});
