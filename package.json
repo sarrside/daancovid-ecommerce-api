@@ -1,0 +1,22 @@
+{
+  "name": "daancovid-ecommerce-api",
+  "version": "1.0.0",
+  "description": "ecommerce pour lutter contre le covid-19",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Serigne Asse Side SARR",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.11",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "sequelize": "^5.21.7"
+  }
+}
