@@ -7,6 +7,7 @@ const userController = require('./app/api/controllers/user');
 // connection to mongodb
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use(logger('dev'));
+
 require('./routes')(app);
 
 app.use(bodyParser.urlencoded({extended: false}));

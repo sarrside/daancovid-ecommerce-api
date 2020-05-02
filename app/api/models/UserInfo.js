@@ -19,4 +19,4 @@ const UserInfoSchema = new mongoose.Schema({
     //collection: user_info
 })
 
-module.exports = mongoose.model('Post',UserInfoSchema);
+module.exports = mongoose.model('user_info',UserInfoSchema);

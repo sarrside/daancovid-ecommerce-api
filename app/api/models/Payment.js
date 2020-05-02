@@ -9,4 +9,4 @@ const PaymentSchema = new mongoose.Schema({
     //collection: payment,
 })
 
-module.exports = mongoose.model('Post',PaymentSchema);
+module.exports = mongoose.model('payment',PaymentSchema);

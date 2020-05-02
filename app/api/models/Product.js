@@ -29,4 +29,4 @@ const ProductSchema = new mongoose.Schema({
     //collection: product
 })
 
-module.exports = mongoose.model('Post',ProductSchema);
+module.exports = mongoose.model('product',ProductSchema);
