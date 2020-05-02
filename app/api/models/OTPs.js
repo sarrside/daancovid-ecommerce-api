@@ -10,7 +10,7 @@ const OTPsSchema = new mongoose.Schema({
     
 },{
     timestamps:true,
-    collection: OTPs
+    //collection: OTPs
 })
 
 module.exports = mongoose.model('Post',PostSchema);

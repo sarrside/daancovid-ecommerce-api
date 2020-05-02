@@ -6,7 +6,7 @@ const PaymentSchema = new mongoose.Schema({
     },
 },{
     timestamps:true,
-    collection: payment,
+    //collection: payment,
 })
 
 module.exports = mongoose.model('Post',PaymentSchema);

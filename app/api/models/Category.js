@@ -10,7 +10,7 @@ const CategorySchema = new mongoose.Schema({
     
 },{
     timestamps:true,
-    collection: category,
+    //collection: category,
 })
 
 module.exports = mongoose.model('Post',CategorySchema);

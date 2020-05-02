@@ -26,7 +26,7 @@ const ProductSchema = new mongoose.Schema({
     
 },{
     timestamps:true,
-    collection: product
+    //collection: product
 })
 
 module.exports = mongoose.model('Post',ProductSchema);

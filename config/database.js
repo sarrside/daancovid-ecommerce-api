@@ -2,7 +2,8 @@
 require('dotenv/config')
 const mongoose = require('mongoose');
 const mongoDB = process.env.URL;
-mongoose.connect(mongoDB, {useNewUrlParser: true},
+const mongoLocal = 'mongodb://localhost:27017/daancovid-ecommerce';
+mongoose.connect(mongoLocal, {useNewUrlParser: true},
     ()=>{
         console.log('Database connected');
     });

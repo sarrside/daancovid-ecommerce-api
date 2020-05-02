@@ -13,7 +13,7 @@ const OrderSchema = new mongoose.Schema({
     }
 },{
     timestamps:true,
-    collection: order
+    //collection: order
 });
 
 module.exports = mongoose.model('Post',OrderSchema);
