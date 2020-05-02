@@ -56,7 +56,7 @@ module.exports = {
             if(err){
                 return next(err);
             }else{
-                res.send(data);
+                res.send(users);
             }
         })
     },

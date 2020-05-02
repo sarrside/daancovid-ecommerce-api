@@ -10,6 +10,7 @@ const {
 } = require('./../app/api/controllers')
 
 module.exports = (app) => {
-
+    //USER ROUTES
     app.post('/user', UserController.create);
+    app.get('/users', UserController.getAll);
 }
