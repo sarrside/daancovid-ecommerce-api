@@ -16,7 +16,7 @@ const UserInfoSchema = new mongoose.Schema({
     }
 },{
     timestamps:true,
-    collection: user_info
+    //collection: user_info
 })
 
 module.exports = mongoose.model('Post',UserInfoSchema);
