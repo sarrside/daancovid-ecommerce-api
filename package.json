@@ -4,7 +4,8 @@
   "description": "ecommerce pour lutter contre le covid-19",
   "main": "app.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "start:dev": "nodemon app.js"
   },
   "author": "Serigne Asse Side SARR",
   "license": "ISC",

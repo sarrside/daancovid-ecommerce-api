@@ -9,7 +9,12 @@ const UserSchema = new Schema({
  active: {
   type: Boolean,
   required: true
- }
+ },
+
+}
+,{
+    timestamps:true,
+    //collection: users
 });
 
 
