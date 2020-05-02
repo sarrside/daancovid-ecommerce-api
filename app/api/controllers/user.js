@@ -2,7 +2,7 @@ const User = require('../models/User');
 
 module.exports = {
     create: function(req, res, next) {
-     const {phone} = req.query;
+     const {phone} = req.body;
      User.create({
          phone: phone,
          active: true
@@ -41,12 +41,18 @@ module.exports = {
     },
 
     delete: function(req, res){
-        User.findByIdAndUpdate(req.body.id, (err,data)=>{
+        User.findById(req.params.id, (err,data)=>{
             if (err) {
                 return next(err);
             }else{
-                res.status(200).json({
-                    msg: 'user succesfully deleted'
+                data.delete((err, result)=>{
+                    if (err) {
+                        throw err;
+                    }else{
+                        res.send({
+                            msg: 'Succesfully removed'
+                        })
+                    }
                 })
             }
         })
@@ -61,7 +67,7 @@ module.exports = {
         })
     },
     get: function(req, res){
-        User.findById(req.body.id, (err, user)=>{
+        User.findById(req.params.id, (err, user)=>{
             if(err){
                 return next(err);
             }else{
@@ -70,3 +76,4 @@ module.exports = {
         })
     }
 }
+//apidoc -i controller/ -o public/apidoc/
