@@ -12,7 +12,7 @@
   "dependencies": {
     "apidoc": "^0.22.0",
     "axios": "^0.19.2",
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "chance": "^1.1.4",
     "dotenv": "^8.2.0",
